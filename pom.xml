@@ -8,4 +8,35 @@
 
   <name>dropwizard-examples</name>
 
+  <properties>
+    <com.yammer.dropwizard.version>0.6.2</com.yammer.dropwizard.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.yammer.dropwizard</groupId>
+      <artifactId>dropwizard-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.yammer.dropwizard</groupId>
+      <artifactId>dropwizard-testing</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.yammer.dropwizard</groupId>
+        <artifactId>dropwizard-core</artifactId>
+        <version>${com.yammer.dropwizard.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.yammer.dropwizard</groupId>
+        <artifactId>dropwizard-testing</artifactId>
+        <version>${com.yammer.dropwizard.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
 </project>
