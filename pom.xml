@@ -9,6 +9,7 @@
   <name>dropwizard-examples</name>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <com.yammer.dropwizard.version>0.6.2</com.yammer.dropwizard.version>
   </properties>
 
