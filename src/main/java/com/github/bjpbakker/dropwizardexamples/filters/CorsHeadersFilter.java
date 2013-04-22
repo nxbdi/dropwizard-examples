@@ -12,10 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class CorsHeadersFilter implements Filter {
-
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
-            ServletException {
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         if (response instanceof HttpServletResponse) {
             HttpServletResponse httpServletResponse = (HttpServletResponse) response;
             HttpServletRequest httpServletRequest = (HttpServletRequest) request;
@@ -28,13 +26,8 @@ public class CorsHeadersFilter implements Filter {
     }
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-        // no configuration required
-    }
+    public void init(FilterConfig filterConfig) throws ServletException {}
 
     @Override
-    public void destroy() {
-        // nothing to destroy
-    }
-
+    public void destroy() {}
 }
